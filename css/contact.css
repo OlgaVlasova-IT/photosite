@@ -1,0 +1,180 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+  font-family: Century Gothic;
+  text-align: center;
+  background-color: snow;
+		margin: 0;
+}
+.Menu {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-decoration: none;
+  background-color: lavender;
+  height: 100px;
+  width: 100%;
+}
+.menuLink {
+  font-size: 20px;
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  /*height: 100%;*/
+}
+p {
+  text-align: center;
+}
+a {
+  text-decoration: none;
+	color: darkorchid;
+}
+   .button {
+    background-color: lavender;
+    border-radius: 14px;
+    border: none;
+    font-size: 14px;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    color: darkorchid;
+    font-family: Century Gothic;
+    width: 160px;
+    height: 80px;
+  }
+
+  .button:hover {
+    background-color: plum;
+    color: darkorchid;
+  }
+footer {
+    display: flex;
+	flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+    background-color: lavender;
+    text-align: right;
+    font-size: 15px;
+    flex-wrap: wrap;
+  }
+  /*Footer divs*/
+  .footerContact, .footerRights, .footerIcons {
+    width: 29%;
+    text-align: center;
+  }
+  /*Main page. containers under the Galery*/
+  
+
+/*Contact form textArea*/
+  .textArea {
+    background-color: lavender;
+  }
+  /*Contact form texInput*/
+  .textInput {
+    width: 320px;
+    background-color: lavender;
+    height: 25px;
+  }
+/*Div container for address and contact form*/
+  .contactContainer {
+    display: flex;
+	flex-direction:row;
+   
+	 margin-left:250px; 
+    width: 80%;
+    height: auto;
+	  
+  }
+  /*inner left container of the contactContainer */
+  .contactForm {
+    position: relative;
+    text-align: left;
+    height: auto;
+    padding: 20px 20px 20px 20px;
+    margin: 30px 5px 30px 5px;
+    width: 50%
+  }
+  /*inner right container of the contactContainer */
+  .contactData {
+    display: flex;
+	flex-direction: column;
+    padding: 10px 10px 20px 100px;
+    margin: 20px 5px 20px 5px;
+    width: 30%
+  }
+  /* inner container for icons in a left ContanctData div*/
+  .iconsContact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30%;
+  }
+  /* inner containers for address and contact information*/
+  .contact {
+	 width: 100%; 
+    padding: 10px 10px 0 10px 0;
+    margin: 30px 50px 20px 0;
+    text-align: left;
+  }
+
+.contactForm{
+	width: 100%;
+}
+  .contact:hover {
+    background-color: plum;
+    color: darkorchid;
+  }
+
+@media screen and (max-width: 800px) {
+	.contactData{
+		width: 100%;
+		padding-left: 20px;
+	}
+	.contactContainer {
+    display:flex;
+	flex-direction: column-reverse;
+		margin-left: 0;
+  }
+	
+	.contact{
+	margin: 5px;	
+		
+	}
+	
+	.parBody{text-align: left;	
+	
+}
+	
+   .Menu {
+    display: flex;
+	flex-direction: column;
+	flex-wrap: wrap ;  
+    justify-content:space-around;
+    width: 100%;
+	height: auto; 
+  }
+
+  .menuLink {
+    font-size: 14px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+  }
+	
+footer {
+	display: flex;
+	flex-direction: column-reverse;
+    font-size: 14px;
+    align-content: center;
+	
+  }	
+
+	.footerContact, .footerRights, .footerIcons {
+    width: 100%;
+    text-align: center; 
+   
+  }	
+}
+
